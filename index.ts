@@ -113,7 +113,7 @@ app.post("/mint", async (req, res) => {
         const sdk = new ThirdwebSDK(
           new ethers.Wallet(
             process.env.PRIVATE_KEY,
-            ethers.getDefaultProvider("https://rinkeby-light.eth.linkpool.io/")
+            ethers.getDefaultProvider("https://rpc-mumbai.maticvigil.com")
           )
         );
         const nftModule = sdk.getNFTModule(process.env.NFT_MODULE_ADDRESS);
